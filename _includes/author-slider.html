@@ -1,0 +1,8 @@
+<div class="author-carousel">
+    {% for item in site.data.authors.authors %}
+    <div class="author--carousel-cell" style="margin: 6px;">
+        <div class="author--photo" style="background: url('{{ site.baseurl }}{{ item.photo }}'); background-position: center; background-size: cover; width: 100px; height: 130px; border-radius: 10px;"></div>
+        <span class="author--name" style="font-size: 10px; font-family: 'Playfair Display', serif; margin-left: 5px;">{{ item.name | truncate: 18 }}</span>
+    </div>
+    {% endfor %}
+</div>
