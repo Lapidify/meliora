@@ -349,9 +349,8 @@ body {
 }
 
 .l-section {
-	position: absolute;
 	width: 100%;
-	height: 100%
+	margin-top: 50px;
 }
 
 .device-notification {
@@ -476,9 +475,6 @@ body {
 }
 
 .header {
-	position: absolute;
-	top: 0;
-	left: 0;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
