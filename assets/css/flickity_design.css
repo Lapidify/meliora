@@ -9,6 +9,11 @@
     }
 }
 
+@media (max-width: 320px) {
+    .carousel-cell {
+        margin: 10px;
+    }    
+}
 /* Magazine Design */
 .magazine--cover {
     width: 250px;
