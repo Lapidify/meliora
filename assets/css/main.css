@@ -301,7 +301,8 @@ body {
 	width: 1440px;
 	max-width: 90%;
 	height: 100%;
-	margin: 0 auto
+	margin: 0 auto;
+	overflow: hidden;
 }
 
 .l-side-nav {
