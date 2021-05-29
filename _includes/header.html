@@ -2,7 +2,7 @@
     <a class="header--logo" href="{{ site.baseurl }}">
       <p class="gradient-text" style="font-family: 'Playfair Display', serif;">meliora</p>
     </a>
-    <a class="header--logo" href="{{ site.baseurl }}">
-      <span>Read Now</span>
-    </a>
+    {% if page.magazine_url %}
+    <a href="{{ site.baseurl }}/web/viewer.html?file={{ page.magazine_url | url_encode}}" class="readnow" style="text-decoration: none;" href="{{ site.baseurl }}">Read Now</a>
+    {% endif %}
 </header>

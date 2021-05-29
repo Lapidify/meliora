@@ -36,6 +36,14 @@ plugins:
 collections:
   magazine:
     output: true
+    permalink: /magazine/:title
+
+defaults:
+  - scope:
+      path: ""
+      type: "magazine"
+    values:
+      layout: "magazine"
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
