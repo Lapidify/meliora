@@ -18,6 +18,35 @@ collections:
       preview: false
     delete: true
     files:
+      - label: "Metadata"
+        name: "metadata"
+        file: "_data/metadata.yml"
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+            required: true
+            hint: "Ex. Meliora"
+          - label: "Email"
+            name: "email"
+            widget: "string"
+            required: true
+            hint: "Ex. someone@doamin.com"
+          - label: "Description"
+            name: "description"
+            widget: "text"
+            required: true
+            hint: "This keywords will be appeared on search engines."
+          - label: "Site's URL"
+            name: "url"
+            widget: "string"
+            required: true
+            hint: "Ex. something.com / something.domain.com"
+          - label: "Author of website"
+            name: "author"
+            widget: "string"
+            required: true
+            hint: "Ex. John Doe"
       - label: "Landing Page"
         name: "landing_page"
         file: "_data/landing.yml"
@@ -69,11 +98,21 @@ collections:
         widget: "string"
         required: true
         hint: "Eg: John Doe"
+      - label: "Cover Author" # author of cover photo
+        name: "cover_author_photo"
+        widget: "image"
+        media_folder: /uploads/cover_authors
+        allow_multiple: false
+        required: true
       - label: "Upload the magazine" # magazine file
         name: "magazine_file"
         widget: "file"
         media_folder: /uploads/magazine_files
         allow_multiple: false
+        required: true
+      - label: "Editor's Note" # editor's note
+        name: "editors_note"
+        widget: "text"
         required: true
       - label: "Features" # magazine feature
         name: "feature"
@@ -108,3 +147,8 @@ collections:
             media_folder: /uploads/team_profile
             allow_multiple: false
             required: true
+      - label: "Chief Editor" # chief editor
+        name: "editor"
+        widget: "string"
+        required: true
+        hint: "Eg John Doe"

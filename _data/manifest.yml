@@ -1,0 +1,10 @@
+lang: en
+dir: ltr
+name: Meliora
+short_name: Meliora
+display: standalone
+description:  Sgmc’s first ever e-newsletter presenting evolving chronicles of SGMCRF voicing thoughts and opinions, an initiative of Navodhan Students’s Union 20-21
+background_color: "#0c0c0c"
+theme_color: "#0c0c0c"
+orientation: natural
+start_url: "/"

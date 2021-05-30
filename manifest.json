@@ -1,0 +1,22 @@
+---
+layout: null
+permalink: "/manifest.json"
+---
+{
+  "lang": "{{site.data.manifest.lang}}",
+  "dir": "{{site.data.manifest.dir}}",
+  "name": "{{site.data.manifest.name}}",
+  "short_name": "{{site.data.manifest.short_name}}",
+  "icons": [
+    {
+      "src": "\/assets\/images\/logo192.png",
+      "sizes": "192x192",
+      "type": "image\/png"
+    }
+  ],
+  "theme_color": "{{site.data.manifest.theme_color}}",
+  "background_color": "{{site.data.manifest.background_color}}",
+  "start_url": "{{site.data.manifest.start_url}}",
+  "display": "{{site.data.manifest.display}}",
+  "orientation": "{{site.data.manifest.orientation}}"
+}

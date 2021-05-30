@@ -157,3 +157,9 @@ footer {
     padding: 20px;
     border-radius: 10px;
 }
+
+.magazine--editor {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+}

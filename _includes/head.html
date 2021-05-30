@@ -1,11 +1,15 @@
   <!-- metadata -->
-  <title>{{ site.data.metadata.title }} - {{ site.data.landing.landingTagline }}</title>
+  <title>{{ site.data.metadata.title }} - {{ site.data.landing.landingTagline }}</title> <!-- title -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="{{ site.data.metadata.desciption }}">
-  <meta name="keywords" content="global, template, html, sass, jquery">
-  <meta name="author" content="{{ site.data.metadata.author }}">
+  <meta name="description" content="{{ site.data.metadata.desciption }}"> <!-- description -->
+  <meta name="keywords" content="global, template, html, sass, jquery"> <!-- tags -->
+  <meta name="author" content="{{ site.data.metadata.author }}"> <!-- author of site -->
+  <meta property="og:image" content="{% if page.featured_image %}{{ site.baseurl }}{{ page.featured_image }}{% else %}{{ site.baseurl }}{{ site.metadata.image }}{% endif %}"> <!-- other metadata -->
+  <meta property="og:description" content="{{ site.data.metadata.desciption }}">
+  <meta property="og:title" content="{{ site.data.metadata.title }} - {{ site.data.landing.landingTagline }}">
+  <link rel="shortcut icon" href="{{ site.baseurl }}{{ site.data.metadata.favicon }}" type="image/x-icon"> <!-- favicon -->
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300;400;500;600;700;800;900&family=Shrikhand&display=swap" rel="stylesheet">
@@ -15,3 +19,13 @@
   <!-- Flickity CSS-->
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/flickity.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/flickity_design.css">
+  <!-- Theme color -->
+  <meta name="theme-color" content="#0c0c0c">
+  <!-- App Manifest-->
+  <link rel="manifest" href="{{site.baseurl}}/manifest.json">
+  <!-- Jekyll PWA Script-->
+  <script type="module">
+  import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+  const el = document.createElement('pwa-update');
+  document.body.appendChild(el)
+  </script>
