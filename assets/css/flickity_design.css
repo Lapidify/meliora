@@ -30,7 +30,7 @@
     background: #ccc;
     padding: 5px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.43);
+    background: rgba(0, 0, 0, 0.47);
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
 }
