@@ -116,10 +116,37 @@ a.magazine--button {
 }
 
 .featured--image {
-    width: 150px;
-    height: 200px;
+    width: 170px;
+    height: 220px;
     float: left;
-    display: flex;
+    display: block;
+    margin-right: 20px;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.editors--note {
+    width: 95%;
+    display: block;
+    margin: 10px;
+        margin-bottom: 10px;
+}
+
+.cover--image_author {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr;
+}
+
+.author--details {
+    font-size: 10px;
+    margin-left: 10px;
+    line-height: 0.8rem;
+}
+
+.author--name {
+    display: block;
+    font-weight: 600;
 }
 
 /* footer */

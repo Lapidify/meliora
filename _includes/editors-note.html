@@ -2,7 +2,12 @@
     <div class="work">
       <h2 style="font-family: 'Playfair Display', serif; text-align: left;">Editor's <span class="gradient-text">Note.</span></h2>
       <div>
-        <div class="featured--image" style="background: url('{{ site.baseurl }}{{ page.featured_image }}');background-position: center;background-size: cover;"></div>
+        <div class="featured--image" style="background: url('{{ site.baseurl }}{{ page.featured_image }}');background-position: center;background-size: cover;">
+          <div class="cover--image_author">
+            <img src="/assets/img/meliora.jpeg" style="width: 30px; height: 30px;object-fit: cover;object-position: center; border-radius: 50%;">
+            <span class="author--details"><span class="author--social" style="margin-top: .18rem;">Cover photo by</span><span class="author--name">Harigivind K S</span></span>
+          </div>
+        </div>
         <span class="editors--note" style="text-align: left; margin-bottom: 10px;">{{ page.editors_note }}</span>
       </div>
     </div>
