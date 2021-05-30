@@ -116,7 +116,8 @@ collections:
         required: true
       - label: "Features" # magazine feature
         name: "feature"
-        widget: "object"
+        widget: "list"
+        allow_add: true
         collapsed: true
         summary: "{{fields.title}}: {{ fields.page_No}}"
         fields:
@@ -132,8 +133,9 @@ collections:
             hint: "Eg: 3-4"
       - label: "Team Members" # magazine team
         name: "team"
-        widget: "object"
+        widget: "list"
         collapsed: true
+        allow_add: true
         summary: "{{fields.name}}"
         fields:
           - label: "Name"
