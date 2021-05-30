@@ -107,7 +107,7 @@ collections:
           - label: "Photo"
             name: "photo"
             widget: "image"
-            media_folder: /uploads/cover_author
+            media_folder: /uploads/cover_authors
             allow_multiple: true
             required: true
       - label: "Editor's Area" # editors area
