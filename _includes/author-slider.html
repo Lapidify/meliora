@@ -1,5 +1,5 @@
 <div class="author-carousel">
-    {% for item in page.authors %}
+    {% for item in page.team %}
     <div class="author--carousel-cell" style="margin: 6px;">
         <div class="author--photo" style="background: url('{{ site.baseurl }}{{ item.photo }}'); background-position: center; background-size: cover; width: 80px; height: 80px; border-radius: 50%; border: 3px solid #fd0643;"></div>
         <span class="author--name gradient-text" style="font-size: 9px; margin: 0px auto; width: 100%; display: block; text-align: center;">{{ item.name | truncate: 15 }}</span>

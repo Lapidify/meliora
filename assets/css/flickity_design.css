@@ -64,7 +64,7 @@ a.magazine--button {
     padding: 10px 20px;
     border-radius: 10px;
     color: #fff;
-    width: 250px;
+    width: 220px;
     text-align: center;
 }
 
@@ -120,7 +120,7 @@ a.magazine--button {
     height: 220px;
     float: left;
     display: block;
-    margin-right: 10px;
+    margin-right: 15px;
     border-radius: 15px;
     padding: 5px;
 }
@@ -128,8 +128,6 @@ a.magazine--button {
 .editors--note {
     width: 95%;
     display: block;
-    margin: 10px;
-        margin-bottom: 10px;
 }
 
 .cover--image_author {
@@ -151,5 +149,11 @@ a.magazine--button {
 
 /* footer */
 footer {
-    background: #000;
+    background: #0c0c0c;
+}
+
+.download--file {
+    background: linear-gradient(324deg,#fc0b85 0,#ff0101 100%);
+    padding: 20px;
+    border-radius: 10px;
 }

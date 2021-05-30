@@ -64,6 +64,11 @@ collections:
         media_folder: /uploads/featured_images
         allow_multiple: false
         required: true
+      - label: "Cover photo by" # cover photo author
+        name: "cover_author"
+        widget: "string"
+        required: true
+        hint: "Eg: John Doe"
       - label: "Upload the magazine" # magazine file
         name: "magazine_file"
         widget: "file"
@@ -81,4 +86,25 @@ collections:
             widget: "string"
             required: true
             hint: "Eg: G-toons"
-          - label: "Select the font"
+          - label: "Page No"
+            name: "page_No"
+            widget: "string"
+            required: true
+            hint: "Eg: 3-4"
+      - label: "Team Members" # magazine team
+        name: "team"
+        widget: "object"
+        collapsed: true
+        summary: "{{fields.name}}"
+        fields:
+          - label: "Name"
+            name: "name"
+            widget: "string"
+            required: true
+            hint: "Eg: John Doe"
+          - label: "Profile Photo"
+            name: "photo"
+            widget: "image"
+            media_folder: /uploads/team_profile
+            allow_multiple: false
+            required: true

@@ -7,19 +7,14 @@ magazine_file: /uploads/demo-pdf.pdf
 text_color: "#ffffff"
 feature:
   - title: G-toons
-    text_color: "#ffd220"
-    font-family: "'Shrikhand', cursive"
     page_No: 134-135
   - title: FACE OF THE MONTH
-    font-family: "Big Shoulders Display', cursive"
     page_No: 134-135
   - title: G-toons
-    font-family: "'Shrikhand', cursive"
     page_No: 134-135
   - title: G-toons
-    font-family: "'Shrikhand', cursive"
     page_No: 134-135
-authors:
+team:
   - name: Akshaya S B
     photo: /assets/img/akshaya.jpeg
   - name: Anunanda Vijyan Suma

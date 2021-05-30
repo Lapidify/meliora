@@ -1,7 +1,7 @@
 <div class="feature-carousel">
     {% for item in page.feature %}
     <div class="feature--carousel-cell" style="margin: 6px;">
-        <span class="feature--title" style="font-family: {{ item.font-family }}; color: {{ item.text_color }}" >{{ item.title }}</span>
+        <span class="feature--title">{{ item.title }}</span>
         <span class="feature--page">( {{ item.page_No }} )</span>
     </div>
     {% endfor %}
