@@ -15,12 +15,12 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/flickity.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/flickity_design.css">
 </head>
-<body>
+<body {% if page.featured_image %}style="background: url('{{ site.baseurl }}{{ page.featured_image }}');background-size: cover;background-position: center;"{% endif %}>
 
     {{ content }}
 
     <footer>
-      <span class="footer--meliora" style="position: relative; display: block; margin-top: 30px; margin-bottom: 10px; color: #5b5b5b; font-size: 10px; text-align: center; width: 100%;">
+      <span class="footer--meliora" style="position: relative; display: block; padding-top: 30px; padding-bottom: 20px; color: #5b5b5b; font-size: 10px; text-align: center; width: 100%;">
           &copy; Meliora 2021 | Navodhan20'21 | SGMC
       </span>
    </footer>

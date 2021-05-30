@@ -60,20 +60,24 @@ a.magazine--button {
 /* feature slider
 */
 .feature--carousel-cell {
-    width: 300px;
     background: #131313;
     padding: 10px 20px;
-    border-radius: 15px;
+    border-radius: 10px;
     color: #fff;
+    width: 250px;
+    text-align: center;
 }
 
 .feature--title {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
 }
 
-.feature--description {
-    font-size: 13px;
+.feature--page {
+    display: block;
+    font-size: 11px;
+    color: #686868;
+    font-weight: 600;
 }
 
 /* Gradient Text */
@@ -90,8 +94,8 @@ a.magazine--button {
 
 /* Read Now */
 .readnow {
-    color: #ff001c;
-    background: #1e1e1e;
+    color: #fff;
+    background: #ffffff30;
     padding: 5px 15px;
     border-radius: 5px;
 }
@@ -109,4 +113,16 @@ a.magazine--button {
     text-transform: uppercase;
     font-weight: 600;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.featured--image {
+    width: 150px;
+    height: 200px;
+    float: left;
+    display: flex;
+}
+
+/* footer */
+footer {
+    background: #000;
 }

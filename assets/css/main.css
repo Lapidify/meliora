@@ -1585,7 +1585,8 @@ body {
 	-webkit-transition: -webkit-transform .4s;
 	transition: -webkit-transform .4s;
 	transition: transform .4s;
-	transition: transform .4s, -webkit-transform .4s
+	transition: transform .4s, -webkit-transform .4s;
+	background: linear-gradient(4deg, rgb(0, 0, 0) 70%, rgba(255, 255, 255, 0) 100%);
 }
 
 .modalview .container {

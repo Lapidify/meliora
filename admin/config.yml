@@ -58,19 +58,27 @@ collections:
         widget: "string"
         required: true
         hint: "Ex: Meliora'1"
-      - label: "Icon Code" # featured image of magazine
-        name: "icon_code"
-        widget: "string"
+      - label: "Featured image" # featured image of magazine
+        name: "featured_image"
+        widget: "image"
+        media_folder: /uploads/featured_images
+        allow_multiple: false
         required: true
-        hint: "Ex: f1cb"
-      - label: "Icon Tag"
-        name: "icon_tag"
-        widget: "string"
+      - label: "Upload the magazine" # magazine file
+        name: "magazine_file"
+        widget: "file"
+        media_folder: /uploads/magazine_files
+        allow_multiple: false
         required: true
-        hint: "Ex: pointer"
-      - label: "Icon Type"
-        name: "icon_type"
-        widget: "select"
-        options:
-          - { label: "Solid", value: "solid" }
-          - { label: "Linear", value: "Linear" }
+      - label: "Features" # magazine feature
+        name: "feature"
+        widget: "object"
+        collapsed: true
+        summary: "{{fields.title}}: {{ fields.page_No}}"
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+            required: true
+            hint: "Eg: G-toons"
+          - label: "Select the font"
