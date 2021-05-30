@@ -125,6 +125,10 @@ collections:
             name: "note"
             widget: "text"
             required: true
+      - label: "Features description" # title of magazine
+        name: "features_description"
+        widget: "text"
+        required: true
       - label: "Features" # magazine feature
         name: "feature"
         widget: "list"
@@ -142,6 +146,10 @@ collections:
             widget: "string"
             required: true
             hint: "Eg: 3-4"
+      - label: "Team description" # title of magazine
+        name: "team_description"
+        widget: "text"
+        required: true
       - label: "Team Members" # magazine team
         name: "team"
         widget: "list"
