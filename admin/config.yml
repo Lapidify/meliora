@@ -84,17 +84,17 @@ collections:
         date_format: "DD.MM.YYYY"
         time_format: "HH:mm"
         picker_utc: true # UTC time picker
-        required: true
       - label: "Do you want to set this release as coming soon?"
         name: "comingSoon"
         widget: "boolean"
         default: false
-        required: true
         hint: "If this is a release please choose false."
+      - label: "Text color"
+        name: "text_color"
+        widget: "color"
       - label: "Title of Magazine" # title of magazine
         name: "title"
         widget: "string"
-        required: true
         hint: "Ex: Meliora'1"
       - label: "Featured image" # featured image of magazine
         name: "featured_image"
@@ -111,14 +111,12 @@ collections:
           - label: "Name"
             name: "name"
             widget: "string"
-            required: true
             hint: "Eg: John Doe"
           - label: "Photo"
             name: "photo"
             widget: "image"
             media_folder: /uploads/cover_authors
-            allow_multiple: true
-            required: true
+            allow_multiple: false
       - label: "Editor's Area" # editors area
         name: "editor"
         widget: "object"
@@ -128,16 +126,13 @@ collections:
           - label: "Name"
             name: "name"
             widget: "string"
-            required: true
             hint: "Eg: John Doe"
           - label: "Editor's Note"
             name: "note"
             widget: "text"
-            required: true
       - label: "Features description" # title of magazine
         name: "features_description"
         widget: "text"
-        required: true
       - label: "Features" # magazine feature
         name: "feature"
         widget: "list"
@@ -148,17 +143,14 @@ collections:
           - label: "Title"
             name: "title"
             widget: "string"
-            required: true
             hint: "Eg: G-toons"
           - label: "Page No"
             name: "page_No"
             widget: "string"
-            required: true
             hint: "Eg: 3-4"
       - label: "Team description" # title of magazine
         name: "team_description"
         widget: "text"
-        required: true
       - label: "Team Members" # magazine team
         name: "team"
         widget: "list"
@@ -169,17 +161,14 @@ collections:
           - label: "Name"
             name: "name"
             widget: "string"
-            required: true
             hint: "Eg: John Doe"
           - label: "Profile Photo"
             name: "photo"
             widget: "image"
             media_folder: /uploads/team_profile
             allow_multiple: false
-            required: true
       - label: "Upload the magazine" # magazine file
         name: "magazine_file"
         widget: "file"
         media_folder: /uploads/magazine_files
         allow_multiple: false
-        required: true
