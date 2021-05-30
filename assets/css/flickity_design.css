@@ -14,7 +14,8 @@
         margin: 10px;
     }    
 }
-/* Magazine Design */
+/* Magazine Design 
+*/
 .magazine--cover {
     width: 250px;
     height: 350px;
@@ -56,15 +57,23 @@ a.magazine--button {
     text-decoration: none;
 }
 
-/* Intro */
-.intro--background {
-    position: absolute;
-    bottom: 21px;
-    right: -12px;
-    height: 400px;
+/* feature slider
+*/
+.feature--carousel-cell {
     width: 300px;
-    background-size: cover;
-    background-position: center;
+    background: #131313;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.feature--title {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.feature--description {
+    font-size: 13px;
 }
 
 /* Gradient Text */
@@ -85,4 +94,19 @@ a.magazine--button {
     background: #1e1e1e;
     padding: 5px 15px;
     border-radius: 5px;
+}
+
+/* New magazine tag
+*/
+.tag-magazine {
+    position: absolute;
+    background: #ff3737;
+    top: 10px;
+    left: -5px;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }

@@ -1,0 +1,7 @@
+{% capture weekago %}{{ "now" | date: "%s" | minus: 259200 }}{% endcapture %}
+{% capture magazinetime %}{{ magazine.date | date: "%s" }}{% endcapture %}
+{% if magazinetime > weekago %}
+<span class="tag-magazine">
+    New
+</span>
+{% endif %}

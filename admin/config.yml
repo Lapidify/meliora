@@ -1,0 +1,76 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# when using the default proxy server port
+local_backend: true
+
+site_url: ""
+display_url: ""
+logo_url: ""
+
+media_folder: "uploads"
+
+collections:
+  - label: "Site Settings" # site settings
+    name: "site_settings"
+    editor:
+      preview: false
+    delete: true
+    files:
+      - label: "Landing Page"
+        name: "landing_page"
+        file: "_data/landing.yml"
+        fields:
+          - label: "Gradient Title"
+            name: "landingTitleGradient"
+            widget: "string"
+            required: true
+            hint: "Ex. Meliora"
+          - label: "Tagline"
+            name: "landingTagline"
+            widget: "string"
+            required: true
+            hint: "Ex. The evolving chronicles"
+          - label: "Description"
+            name: "landingDescription"
+            widget: "text"
+            required: false
+            hint: "This keywords will be appeared on search engines."
+  - label: "Magazine" # magazine field
+    name: "magazine"
+    folder: "_magazine"
+    create: true
+    identifier_field: "title"
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - label: "Published Date" # date of publish of magazine
+        name: "date" 
+        widget: "datetime"
+        date_format: "DD.MM.YYYY"
+        time_format: "HH:mm"
+        picker_utc: true # UTC time picker
+        required: true
+      - label: "Title of Magazine" # title of magazine
+        name: "title"
+        widget: "string"
+        required: true
+        hint: "Ex: Meliora'1"
+      - label: "Icon Code" # featured image of magazine
+        name: "icon_code"
+        widget: "string"
+        required: true
+        hint: "Ex: f1cb"
+      - label: "Icon Tag"
+        name: "icon_tag"
+        widget: "string"
+        required: true
+        hint: "Ex: pointer"
+      - label: "Icon Type"
+        name: "icon_type"
+        widget: "select"
+        options:
+          - { label: "Solid", value: "solid" }
+          - { label: "Linear", value: "Linear" }

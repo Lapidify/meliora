@@ -2,6 +2,13 @@
     {% for magazine in site.magazine %}
     <div class="carousel-cell">
         <div class="magazine--cover" style="background: url('{{ site.baseurl }}{{ magazine.featured_image }}');background-size: cover;background-position: center;">
+            {% if magazine.coming_soon == true %}
+            <span class="tag-magazine">
+                Coming Soon
+            </span>
+            {% else %}
+            {% include new-magazine-tag.html %}
+            {% endif %}
             <span class="magazine--title" style="color: {{ magazine.text_color }};">
                 {{ magazine.title }}
                 <span class="magazine--date">{{ magazine.date | date_to_long_string  }}</span>
