@@ -2,7 +2,7 @@
     {% for magazine in site.magazine %}
     <div class="carousel-cell">
         <div class="magazine--cover" style="background: url('{{ site.baseurl }}{{ magazine.featured_image }}');background-size: cover;background-position: center;">
-            {% if magazine.coming_soon == true %}
+            {% if magazine.comingSoon == true %}
             <span class="tag-magazine">
                 Coming Soon
             </span>

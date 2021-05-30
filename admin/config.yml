@@ -5,6 +5,9 @@ backend:
 # when using the default proxy server port
 local_backend: true
 
+# Editorial workflow
+publish_mode: editorial_workflow
+
 site_url: ""
 display_url: ""
 logo_url: ""
@@ -82,6 +85,12 @@ collections:
         time_format: "HH:mm"
         picker_utc: true # UTC time picker
         required: true
+      - label: "Do you want to set this release as coming soon?"
+        name: "comingSoon"
+        widget: "boolean"
+        default: false
+        required: true
+        hint: "If this is a release please choose false."
       - label: "Title of Magazine" # title of magazine
         name: "title"
         widget: "string"
