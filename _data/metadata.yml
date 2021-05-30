@@ -11,7 +11,7 @@ url: "https://meliora.navodhan.in"
 author: Muhammed Ashfar
 
 # favicon
-favicon:
+favicon: /assets/img/favicon.ico
 
 # image
 image:
