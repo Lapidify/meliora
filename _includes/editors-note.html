@@ -4,19 +4,19 @@
       <div>
         <div class="featured--image" style="background: url('{{ site.baseurl }}{{ page.featured_image }}');background-position: center;background-size: cover;">
           <div class="cover--image_author">
-            <img src="{{ site.baseurl }}{{ page.cover_author_photo }}" style="width: 30px; height: 30px;object-fit: cover;object-position: center; border-radius: 50%;">
+            <img src="{{ site.baseurl }}{{ page.cover.photo }}" style="width: 30px; height: 30px;object-fit: cover;object-position: center; border-radius: 50%;">
             <span class="author--details"><span class="author--social" style="margin-top: .18rem;">
               <i>Cover photo by</i>
             </span>
             <span class="author--name">
-              Harigivind K S
+              {{ page.cover.name }}
             </span>
           </div>
         </div>
         <span class="editors--note" style="text-align: left; margin-bottom: 10px;">
-          {{ page.editors_note }}
+          {{ page.editor.note }}
           <span class="magazine--editor">
-            {{ page.editor }}
+            {{ page.editor.name }}
             <span style="font-size: 11px; font-weight: 300; display: block;"><i>Chief Editor, Meliora</i></span>
           </span>
         </span>

@@ -93,27 +93,38 @@ collections:
         media_folder: /uploads/featured_images
         allow_multiple: false
         required: true
-      - label: "Cover photo by" # cover photo author
-        name: "cover_author"
-        widget: "string"
-        required: true
-        hint: "Eg: John Doe"
-      - label: "Cover Author" # author of cover photo
-        name: "cover_author_photo"
-        widget: "image"
-        media_folder: /uploads/cover_authors
-        allow_multiple: false
-        required: true
-      - label: "Upload the magazine" # magazine file
-        name: "magazine_file"
-        widget: "file"
-        media_folder: /uploads/magazine_files
-        allow_multiple: false
-        required: true
-      - label: "Editor's Note" # editor's note
-        name: "editors_note"
-        widget: "text"
-        required: true
+      - label: "Cover Photo Author" # Cover Photo Author
+        name: "cover"
+        widget: "object"
+        collapsed: false
+        summary: "{{fields.name}}"
+        fields:
+          - label: "Name"
+            name: "name"
+            widget: "string"
+            required: true
+            hint: "Eg: John Doe"
+          - label: "Photo"
+            name: "photo"
+            widget: "image"
+            media_folder: /uploads/cover_author
+            allow_multiple: true
+            required: true
+      - label: "Editor's Area" # editors area
+        name: "editor"
+        widget: "object"
+        collapsed: false
+        summary: "{{fields.name}}"
+        fields:
+          - label: "Name"
+            name: "name"
+            widget: "string"
+            required: true
+            hint: "Eg: John Doe"
+          - label: "Editor's Note"
+            name: "note"
+            widget: "text"
+            required: true
       - label: "Features" # magazine feature
         name: "feature"
         widget: "list"
@@ -149,8 +160,9 @@ collections:
             media_folder: /uploads/team_profile
             allow_multiple: false
             required: true
-      - label: "Chief Editor" # chief editor
-        name: "editor"
-        widget: "string"
+      - label: "Upload the magazine" # magazine file
+        name: "magazine_file"
+        widget: "file"
+        media_folder: /uploads/magazine_files
+        allow_multiple: false
         required: true
-        hint: "Eg John Doe"
