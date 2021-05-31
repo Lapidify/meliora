@@ -1,18 +1,12 @@
-# metadata
-title: Meliora
+title: mELIOrA
 logo_text: meLiOrA
 email: sgmc.navodhan@gmail.com
-description: >- 
-  Sgmc’s first ever e-newsletter presenting evolving chronicles of SGMCRF voicing thoughts and opinions, an initiative of Navodhan Students’s Union 20-21
+description: >-
+  SgMC's first ever e-newsletter presenting tHe evolving chronicles- voicing
+  thoughts and opinions, 
 
-# url
-url: "https://meliora.navodhan.in" 
-
-# author
+  an initiative of Navodhan Students’s Union 20-21
+url: https://meliora.navodhan.in
 author: Muhammed Ashfar
-
-# favicon
 favicon: /assets/img/favicon.ico
-
-# image
 og_image: /assets/img/meta_image.png
