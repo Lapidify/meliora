@@ -92,7 +92,7 @@ collections:
       - label: "Title of Magazine" # caption of magazine
         name: "title"
         widget: "string"
-        hint: "Ex: meliora"
+        hint: "Ex: meliora'1"
       - label: "Page Design" # Cover Photo Author
         name: "design"
         widget: "object"
