@@ -96,7 +96,7 @@ collections:
         summary: "{{fields.name}}"
         fields:
           - label: "Accent Color"
-            name: "acccent_color"
+            name: "accent_color"
             widget: "color"
             hint: "Eg: Please select a color as accent color."
           - label: "Upload a meta image/ og:image"
