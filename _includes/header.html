@@ -1,6 +1,6 @@
 <header class="header">
     <a class="header--logo" href="{{ site.baseurl }}">
-      <p {% if page.text_color %}style="color: {{ page.text_color }}; font-family: 'Uncial Antiqua', cursive;" {% else %}class="gradient-text" style="font-family: 'Uncial Antiqua', cursive;"{% endif %}>{{ site.data.metadata.title }}</p>
+      <p {% if page.text_color %}style="color: {{ page.text_color }}; font-family: 'Cinzel Decorative', cursive;" {% else %}class="gradient-text" style="font-family: 'Cinzel Decorative', cursive;"{% endif %}>{{ site.data.metadata.logo_text }}</p>
     </a>
     {% if page.magazine_file %}
     <a href="{{ site.baseurl }}/web/viewer.html?file={{ page.magazine_file | url_encode }}" class="readnow" style="text-decoration: none; color: {{ page.text_color }};" href="{{ site.baseurl }}">Read Now</a>

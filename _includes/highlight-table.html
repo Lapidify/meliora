@@ -3,7 +3,7 @@
       {% if forloop.first %}
       <tr>
         {% for pair in row %}
-          <th style="color: {{ page.text_color }};">{{ pair[0] }}</th>
+          <th style="color: {{ page.design.accent_color }};">{{ pair[0] }}</th>
         {% endfor %}
       </tr>
       {% endif %}

@@ -89,13 +89,25 @@ collections:
         widget: "boolean"
         default: false
         hint: "If this is a release please choose false."
-      - label: "Text color"
-        name: "text_color"
-        widget: "color"
-      - label: "Title of Magazine" # title of magazine
-        name: "title"
-        widget: "string"
-        hint: "Ex: Meliora'1"
+      - label: "Post Design" # Cover Photo Author
+        name: "design"
+        widget: "object"
+        collapsed: false
+        summary: "{{fields.name}}"
+        fields:
+          - label: "Accent Color"
+            name: "acccent_color"
+            widget: "color"
+            hint: "Eg: Please select a color as accent color."
+          - label: "Upload a meta image/ og:image"
+            name: "meta_image"
+            widget: "image"
+            media_folder: /uploads/meta_image
+            allow_multiple: false
+      - label: "Edition of Magazine" # title of magazine
+        name: "edition"
+        widget: "number"
+        hint: "Eg: 1"
       - label: "caption of Magazine" # caption of magazine
         name: "caption"
         widget: "string"

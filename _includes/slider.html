@@ -9,8 +9,9 @@
             {% else %}
             {% include new-magazine-tag.html %}
             {% endif %}
-            <span class="magazine--title" style="color: {{ magazine.text_color }};">
-                {{ magazine.title }}
+            <span class="magazine--title" style="color: {{ magazine.design.accent_color }};">
+                {{ site.data.metadata.logo_text }}
+                <span class="magazine--edition">Edition {{ magazine.edition }}</span>
                 <span class="magazine--date">{{ magazine.date | date: "%b %Y"  }}</span>
             </span>
             <a href="{{ site.baseurl }}{{ magazine.url }}">

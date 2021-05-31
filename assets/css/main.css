@@ -509,7 +509,7 @@ body {
 .header--logo p {
 	margin: 0 0 0 10px;
 	font-size: 24px;
-	font-weight: 700;
+	font-weight: 900;
 }
 
 .header--nav-toggle {
@@ -862,7 +862,7 @@ body {
 
 .work h2 {
 	margin: 0 0 20px 0;
-	font-size: 30px;
+	font-size: 25px;
 	text-align: center
 }
 
