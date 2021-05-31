@@ -89,7 +89,11 @@ collections:
         widget: "boolean"
         default: false
         hint: "If this is a release please choose false."
-      - label: "Post Design" # Cover Photo Author
+      - label: "Title of Magazine" # caption of magazine
+        name: "title"
+        widget: "string"
+        hint: "Ex: meliora"
+      - label: "Page Design" # Cover Photo Author
         name: "design"
         widget: "object"
         collapsed: false
@@ -104,7 +108,7 @@ collections:
             widget: "image"
             media_folder: /uploads/meta_image
             allow_multiple: false
-      - label: "Edition of Magazine" # title of magazine
+      - label: "Edition of Magazine" # edition of magazine
         name: "edition"
         widget: "number"
         hint: "Eg: 1"
