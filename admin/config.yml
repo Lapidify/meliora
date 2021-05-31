@@ -96,6 +96,10 @@ collections:
         name: "title"
         widget: "string"
         hint: "Ex: Meliora'1"
+      - label: "caption of Magazine" # caption of magazine
+        name: "caption"
+        widget: "string"
+        hint: "Ex: Involving chronicles"
       - label: "Featured image" # featured image of magazine
         name: "featured_image"
         widget: "image"
@@ -130,24 +134,24 @@ collections:
           - label: "Editor's Note"
             name: "note"
             widget: "text"
-      - label: "Features description" # title of magazine
-        name: "features_description"
+      - label: "Highlights description" # title of magazine
+        name: "highlights_description"
         widget: "text"
-      - label: "Features" # magazine feature
-        name: "feature"
-        widget: "list"
-        allow_add: true
-        collapsed: true
-        summary: "{{fields.title}}: {{ fields.page_No}}"
+      - label: "Highlights" # Highlights
+        name: "highlights"
+        widget: "object"
+        collapsed: false
+        summary: "{{fields.name}}"
         fields:
-          - label: "Title"
-            name: "title"
+          - label: "Name of the CSV file without out extension"
+            name: "name"
             widget: "string"
-            hint: "Eg: G-toons"
-          - label: "Page No"
-            name: "page_No"
-            widget: "string"
-            hint: "Eg: 3-4"
+            hint: "Eg: for example.csv, enter example only"
+          - label: "Upload the CSV file"
+            name: "file"
+            widget: "file"
+            media_folder: /_data
+            allow_multiple: false
       - label: "Team description" # title of magazine
         name: "team_description"
         widget: "text"

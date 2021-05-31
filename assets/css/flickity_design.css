@@ -42,7 +42,7 @@
     display: block;
     font-size: 35px;
     color: #000;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Uncial Antiqua', cursive;
     font-weight: 900;
     letter-spacing: 1px;
 }
@@ -56,29 +56,6 @@
 
 a.magazine--button {
     text-decoration: none;
-}
-
-/* feature slider
-*/
-.feature--carousel-cell {
-    background: #131313;
-    padding: 10px 20px;
-    border-radius: 10px;
-    color: #fff;
-    width: 220px;
-    text-align: center;
-}
-
-.feature--title {
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.feature--page {
-    display: block;
-    font-size: 11px;
-    color: #686868;
-    font-weight: 600;
 }
 
 /* Gradient Text */
@@ -154,7 +131,6 @@ footer {
 }
 
 .download--file {
-    background: linear-gradient(324deg,#fc0b85 0,#ff0101 100%);
     padding: 20px;
     border-radius: 10px;
 }
@@ -163,4 +139,22 @@ footer {
     display: block;
     margin-top: 10px;
     font-weight: 600;
+}
+
+/* Table */
+table {
+    width: 100%;
+}
+th {
+    border: 2px solid #414141;
+    background: #414141;
+    padding: 10px;
+    text-align: center;
+}
+td {
+    border: 2px solid #414141;
+    padding: 10px 20px;
+}
+.col2 {
+    text-align: center;
 }

@@ -1,8 +1,15 @@
-<div class="feature-carousel">
-    {% for item in page.feature %}
-    <div class="feature--carousel-cell" style="margin: 6px;">
-        <span class="feature--title">{{ item.title }}</span>
-        <span class="feature--page">( {{ item.page_No }} )</span>
-    </div>
+<table>
+    {% for row in site.data.[page.highlights.name] %}
+      {% if forloop.first %}
+      <tr>
+        {% for pair in row %}
+          <th style="color: {{ page.text_color }};">{{ pair[0] }}</th>
+        {% endfor %}
+      </tr>
+      {% endif %}
+  
+      {% tablerow pair in row %}
+        {{ pair[1] }}
+      {% endtablerow %}
     {% endfor %}
-</div>
+</table>

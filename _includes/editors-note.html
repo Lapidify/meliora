@@ -1,6 +1,6 @@
 
     <div class="work">
-      <h2 style="font-family: 'Playfair Display', serif; text-align: left;">Editor's <span class="gradient-text">Note.</span></h2>
+      <h2 style="font-family: 'Playfair Display', serif; text-align: left;"><span style="color: {{ page.text_color }};">Editor's</span> Note.</h2>
       <div>
         <div class="featured--image" style="background: url('{{ site.baseurl }}{{ page.featured_image }}');background-position: center;background-size: cover;">
           <div class="cover--image_author">
@@ -16,8 +16,10 @@
         <span class="editors--note" style="text-align: left; margin-bottom: 10px;">
           {{ page.editor.note }}
           <span class="magazine--editor">
-            {{ page.editor.name }}
-            <span style="font-size: 11px; font-weight: 300; display: block;"><i>Chief Editor, Meliora</i></span>
+            <span style="color: {{ page.text_color }};">{{ page.editor.name }}</span>
+            <span style="font-size: 11px; font-weight: 300; display: block;">
+              <i>Chief Editor, Meliora</i>
+            </span>
           </span>
         </span>
       </div>

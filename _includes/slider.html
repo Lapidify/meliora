@@ -11,7 +11,7 @@
             {% endif %}
             <span class="magazine--title" style="color: {{ magazine.text_color }};">
                 {{ magazine.title }}
-                <span class="magazine--date">{{ magazine.date | date_to_long_string  }}</span>
+                <span class="magazine--date">{{ magazine.date | date: "%b %Y"  }}</span>
             </span>
             <a href="{{ site.baseurl }}{{ magazine.url }}">
                 <svg xmlns="http://www.w3.org/2000/svg" class="magazine--button" width="30px" height="30px" data-name="Layer 1" viewBox="0 0 24 24">
